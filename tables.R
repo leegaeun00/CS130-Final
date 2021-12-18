@@ -287,6 +287,12 @@ rownames(table2)<-NULL
 
 stargazer(table1, table2, summary=F)
 
+#average decrease in remain votes due to rain
+sum(data$sunny_extra_Rpeople)/nrow(data)
+
+#average decrease in leave votes due to rain
+sum(data$sunny_extra_Lpeople)/nrow(data)
+
 
 #### Appendix TABLE 1  ####
 
